@@ -7,11 +7,13 @@
 
 <h1 id="title">This is a heading</h1>
 <p id="back">This is a paragraph.</p>
-<button onclick="send()">Click me</button>  
+<button onclick="send()">Click me2</button>  
 
 </body>
   
 <script>
+window.AppInventor.setWebViewString = document.getElementById("back").innerHTM
+    
 var danilo = window.AppInventor.getWebViewString();
 document.getElementById('title').innerHTML = danilo;
 
