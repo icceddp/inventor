@@ -1,13 +1,24 @@
-<!doctype html>
-<head>  
-  <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">    
-  <meta name="viewport" content="width=device-width, initial-scale=1">  
-  <title>Test</title>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>webviewstring-in-out</title>
 </head>
-<body>   
-  <script>
-    document.write("Il valore inserito dall'app è:<br/>" + window.AppInventor.getWebViewString());
-    window.AppInventor.setWebViewString("Questo è il valore letto dal file Javascript Modification")
-  </script> 
+<body>
+
+<h1 id="title">This is a heading</h1>
+<p id="back">This is a paragraph.</p>
+<button onclick="send()">Click me</button>  
+
 </body>
+  
+<script>
+var danilo = window.AppInventor.getWebViewString();
+document.getElementById('title').innerHTML = danilo;
+
+  
+function send(){ 
+var  app = document.getElementById('back').value; window.AppInventor.setWebViewString(app);     
+}  
+  
+</script>
 </html>
