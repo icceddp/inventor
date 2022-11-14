@@ -16,9 +16,11 @@ var danilo = window.AppInventor.getWebViewString();
 document.getElementById('title').innerHTML = danilo;
 
   
-function send(){ 
-var  app = document.getElementById('back').value; window.AppInventor.setWebViewString(app);     
-}  
+function send() {
+var sendApp  = document.getElementById('back').innerHTM;
+     window.AppInventor.setWebViewString(sendApp);   
+
+}
   
 </script>
-</html>
+</html>     
