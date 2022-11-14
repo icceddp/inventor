@@ -7,21 +7,21 @@
 
 <h1 id="title">This is a heading</h1>
 <p id="back">This is a paragraph.</p>
-<button onclick="send()">Click me2</button>  
+<button onclick="send()">Click me3</button>  
 
 </body>
   
 <script>
-window.AppInventor.setWebViewString = document.getElementById("back").innerHTM
+window.AppInventor.setWebViewString = document.getElementById("back").innerHTML
     
 var danilo = window.AppInventor.getWebViewString();
 document.getElementById('title').innerHTML = danilo;
 
   
 function send() {
-var sendApp  = document.getElementById('back').innerHTM;
-     window.AppInventor.setWebViewString(sendApp);   
-
+var sendApp  = document.getElementById('back').innerHTM;   
+document.getElementById('back').innerHTML = "Isso é um titulo";
+window.AppInventor.setWebViewString(sendApp);
 }
   
 </script>
