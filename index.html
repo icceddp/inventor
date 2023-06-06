@@ -142,7 +142,16 @@ margin-top: 5px;
 <script>
   
 var danilo = window.AppInventor.getWebViewString();
-document.getElementById('am').value = danilo;  
+partes=danilo.split("&");
+median = partes[0]; 
+title = partes[1]; 
+beginer = partes[2];  
+  
+document.getElementById('am').value = median;  
+document.getElementById('ads').value = title;    
+document.getElementById('mds').value = begine;  
+
+document.getElementById('dft').value = danilo;  
   
 function machine(){
 const machine = document.getElementById('maquina').value
