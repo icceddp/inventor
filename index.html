@@ -55,7 +55,7 @@ margin-top: 5px;
   
 <body>
 
-<span>Test2</span>
+<span>Test3</span>
   
 <div class="line-four">
 
@@ -172,11 +172,6 @@ window.AppInventor.setWebViewString(silo);
 
 }
 
-function receiveData(data) {
-  // Faça algo com os dados recebidos do App Inventor
-  console.log(data);
-  alert(data);
-}
 
 window.addEventListener("message", function(event) {
   var data = event.data;
@@ -184,6 +179,13 @@ window.addEventListener("message", function(event) {
 alert(data);
   
 });  
+
+function receiveData(data) {
+  // Faça algo com os dados recebidos do App Inventor
+  console.log(data);
+  alert(data);
+}
+
   
   
 </script>
