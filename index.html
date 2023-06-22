@@ -54,6 +54,9 @@ margin-top: 5px;
 </style>  
   
 <body>
+
+<span>Test1</span>
+  
 <div class="line-four">
 
 <select id="maquina" onchange="machine()">
@@ -167,7 +170,21 @@ const silo = document.getElementById('silo').value
 alert("Selecionado Silo " + silo)
 window.AppInventor.setWebViewString(silo);
 
-}  
+}
+
+function receiveData(data) {
+  // Faça algo com os dados recebidos do App Inventor
+  console.log(data);
+  
+}
+
+window.addEventListener("message", function(event) {
+  var data = event.data;
+  receiveData(data);
+alert(data);
+  
+});  
+  
   
 </script>
 </html>
